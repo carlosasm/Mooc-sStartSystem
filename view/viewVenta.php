@@ -23,9 +23,6 @@ include_once 'public/headerMadera.php';
 			</div>
 		</div>
 		</div>
-
-
-
     </div>
 	<script type="text/javascript">
 	$(document).ready(function(){

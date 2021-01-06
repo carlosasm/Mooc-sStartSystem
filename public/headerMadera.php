@@ -29,12 +29,7 @@
                     
                     <div class="collapse navbar-collapse" id="myNavBar">
                     <ul class="navbar-nav"> 
-                        <li class="nav-item"><a class="nav-link" href="?controlador=Item&accion=insertarMaderaView">Registrar madera</a></li>              
-                        <li class="nav-item"><a class="nav-link" href="?controlador=Item&accion=insertarAcabadoView">Registrar acabado</a>
-                        <li class="nav-item"><a class="nav-link" href="?controlador=Item&accion=insertarMueble">Registrar Mueble</a></li>
-                        <li class="nav-item"><a class="nav-link" href="?controlador=Item&accion=call_listar">  Gestion Muebles</a></li>
-                        <li class="nav-item"><a class="nav-link" href="?controlador=Item&accion=agregarCliente">  Ingresar Cliente</a></li>
-                         <li class="nav-item"><a class="nav-link" href="?controlador=Item&accion=view_venta">  Ingresar compra</a></li>
+                        <li class="nav-item"><a class="nav-link" href="?controlador=Item&accion=call_listar">  Ejemplo Api</a></li>
                     </ul>      
                      </div>       
                 </nav>

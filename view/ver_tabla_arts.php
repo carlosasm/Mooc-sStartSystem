@@ -1,6 +1,8 @@
 
 
  <?php require_once 'public/scripts.php'; ?>
+
+ 
 <div>
 <table class="table table-hover" id="example">
     <thead style="background-color: #dc3545;color: white; font-weight: bold;">
@@ -16,10 +18,10 @@
         
     ?>
     <tr>
-        <td><?php echo $item[0]; ?></td>
-        <td><?php echo $item[1]; ?></td>
+        <td><?php echo $item['_id']; ?></td>
+        <td><?php echo $item['name']; ?></td>
          <td>
-            <span class="btn btn-danger btn-sm"  onclick="eliminarMueble('<?php echo $item[0] ?>')">
+            <span class="btn btn-danger btn-sm"  onclick="eliminarMueble('<?php echo $item['_id'] ?>')">
 					<span class="fa fa-pencil-square-o"></span>
 				</span>
             </td>
