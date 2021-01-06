@@ -6,10 +6,10 @@
     $config->set('modelFolder', 'model/');
     $config->set('viewFolder', 'view/');
     
-    $config->set('dbhost', 'localhost');
-    $config->set('dbname', 'lenguajes');
-    $config->set('dbuser', 'root');
-    $config->set('dbpass', '');
+    $config->set('dbhost', '163.178.107.130');
+    $config->set('dbname', 'exam1_b54994_Dabrin_Lenguajes');
+    $config->set('dbuser', 'laboratorios');
+    $config->set('dbpass', 'UCRSA.118');
     
     
 ?>
