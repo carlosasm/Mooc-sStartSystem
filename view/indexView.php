@@ -5,12 +5,12 @@
         <img class="wave" src="./public/img/wave.png">
         <div class="container">
             <div class="img">
-                <img src="./public/img/bg.svg"> 
+                <img src="./public/img/back.svg"> 
             </div>
             <div class="login-container">
                 <form  action="">
                     <img class="avatar" src="./public/img/avatar1.svg">
-                    <h2>Binvenido!!</h2>
+                    <h2>¡Bienvenido!</h2>
                     <div class="input-div uno">
                         <div class="i">
                             <i class="fas fa-user"></i>

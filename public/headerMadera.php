@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8"/>
-        <title>Sitio ejemplo curso Lenguajes</title>
+        <title>Sitio de Gestión de Datos Empresariales</title>
         <meta name="description" content="Esto es un ejemplo de un sitio web para el curso de Lenguajes"/>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <link rel="shortcut icon" type="image/x-icon" href="img/icono.ico"/>
