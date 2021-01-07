@@ -11,5 +11,4 @@
     $config->set('dbuser', 'laboratorios');
     $config->set('dbpass', 'UCRSA.118');
     
-    
 ?>

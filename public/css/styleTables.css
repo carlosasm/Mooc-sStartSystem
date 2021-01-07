@@ -1,0 +1,15 @@
+th {
+  background-color: #38d39f;
+}
+
+th:hover {
+  background-color: #32be8f;
+}
+
+.page-item.active .page-link {
+  background-color: lightgrey !important;
+  border: 1px solid #32be8f !important;
+}
+.page-link {
+  color: black !important;
+}

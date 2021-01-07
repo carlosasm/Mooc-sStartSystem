@@ -10,18 +10,20 @@
     <th>ID</th>
     <th>Item</th>
     <th>Acciones</th>
+    <th>Descripcion</th>
     </tr>
     </thead>
     <tbody>
     <?php
         foreach ($vars['listado'] as $item){
-        
     ?>
     <tr>
         <td><?php echo $item['_id']; ?></td>
         <td><?php echo $item['name']; ?></td>
+        <td><?php echo $item['desc']; ?></td>
+
          <td>
-            <span class="btn btn-danger btn-sm"  onclick="eliminarMueble('<?php echo $item['_id'] ?>')">
+            <span class="btn btn-sm"  >
 					<span class="fa fa-pencil-square-o"></span>
 				</span>
             </td>
@@ -33,7 +35,6 @@
     </tbody>
 </table>
 </div>
-
 <script type="text/javascript">
 $(document).ready(function() {
     $('#example').DataTable();

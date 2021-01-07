@@ -1,0 +1,13 @@
+.fa,
+.fa-pencil-square-o {
+  background-color: #38d39f;
+  border-color: #38d39f;
+}
+
+.btn {
+  background-color: #38d39f;
+}
+
+.btn:hover {
+  background-color: #32be8f;
+}

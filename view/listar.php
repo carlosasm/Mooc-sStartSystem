@@ -1,6 +1,6 @@
 <?php
 
-include_once 'public/headerMadera.php';
+include_once 'public/headerAdmin.php';
 
 ?>
 
@@ -16,7 +16,7 @@ include_once 'public/headerMadera.php';
 						<div id="tablaDatatable"></div>
 					</div>
 					<div class="card-footer text-muted">
-						By Dabrin Nájera
+						By Mooc´s Systems
 
 					</div>
 				</div>
