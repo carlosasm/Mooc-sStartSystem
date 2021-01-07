@@ -9,7 +9,7 @@
                 <img src="./public/img/back.svg"> 
             </div>
             <div class="login-container">
-                <form  action="?controlador=Item&accion=call_listar">
+                <form  action="?controlador=Product&accion=call_listar">
                     <img class="avatar" src="./public/img/avatar1.svg">
                     <h2>¡Bienvenido!</h2>
                     <div class="input-div uno">

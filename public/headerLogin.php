@@ -11,6 +11,7 @@
         <script type="text/javascript" src="public/js/jquery-3.3.1.js"></script>
         <script type="text/javascript" src="public/js/loginAjax.js"></script>
          <link rel="stylesheet" type="text/css" href="public\css\styleLogin.css"/>
+         <link rel="stylesheet" type="text/css" href="public\css\styleBase.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 

@@ -1,7 +1,7 @@
 <?php
 
 
-class ItemController {
+class ProductController {
 
     public function __construct() {
         $this->view = new View();
@@ -18,5 +18,5 @@ class ItemController {
         $this->view->show("ver_tabla_arts.php", $data);
     }
 
-
+  
 }

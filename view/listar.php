@@ -9,7 +9,7 @@ include_once 'public/headerAdmin.php';
 			<div class="col-sm-12">
 				<div class="card text-left">
 					<div class="card-header">
-						Historial de ventas:
+						Productos
 					</div>
 					<div class="card-body">
 						<hr>

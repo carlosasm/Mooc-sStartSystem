@@ -6,13 +6,13 @@ function login(val1, val2) {
 
     $.ajax({
         data: parametros,
-        url: "?controller=Item&action=call_listar",
+        url: "?controller=Product&action=call_listar",
         type: 'POST',
         beforeSend: function () {
         },
         success: function (response) {
 
-            location.href = "?controlador=Item&accion=call_listar";
+            location.href = "?controlador=Product&accion=call_listar";
         }
 
     });

@@ -13,6 +13,8 @@
          <link rel="stylesheet" type="text/css" href="public\css\styleIcons.css"/>
          <link rel="stylesheet" type="text/css" href="public\css\styleTables.css"/>
          <link rel="stylesheet" type="text/css" href="public\css\styleHeaders.css"/>
+         <link rel="stylesheet" type="text/css" href="public\css\styleBase.css"/>
+
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
@@ -31,7 +33,7 @@
                         <span class="navbar-toggler-icon"></span>
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="?controlador=Item&accion=inicio_sesion">Moocs Systems's</a>
+                    <a class="navbar-brand" href="?controlador=User&accion=inicio_sesion">Moocs Systems's</a>
                     
                     <div class="collapse navbar-collapse" id="myNavBar">
                     <ul class="navbar-nav"> 

@@ -9,8 +9,8 @@
     <tr>
     <th>ID</th>
     <th>Item</th>
-    <th>Acciones</th>
     <th>Descripcion</th>
+    <th>Acciones</th>
     </tr>
     </thead>
     <tbody>
