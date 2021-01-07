@@ -29,7 +29,7 @@
                             <input class="input" type="password">
                         </div>
                     </div>
-                    <a href="#">Olvidó su contraseña</a>
+                    <a href="#">¿Olvidó su contraseña?</a>
                     <input type="submit" class="btn" value="INICIO">
                 </form>
             </div>
