@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .wave {
   position: fixed;
   height: 100%;

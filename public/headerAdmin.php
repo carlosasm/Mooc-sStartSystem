@@ -14,6 +14,8 @@
          <link rel="stylesheet" type="text/css" href="public\css\styleTables.css"/>
          <link rel="stylesheet" type="text/css" href="public\css\styleHeaders.css"/>
          <link rel="stylesheet" type="text/css" href="public\css\styleBase.css"/>
+         <link rel="stylesheet" type="text/css" href="public\css\styleForms.css"/>
+
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -37,7 +39,9 @@
                     
                     <div class="collapse navbar-collapse" id="myNavBar">
                     <ul class="navbar-nav"> 
-                        <li class="nav-item"><a class="nav-link" >  Ejemplo Api</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="?controlador=Product&accion=call_listar">  Ejemplo Api</a></li>
+                        <li class="nav-item"><a class="nav-link" href="?controlador=Product&accion=showRegisterProduct" >  Ejemplo Registro</a></li>
+
                     </ul>      
                      </div>       
                 </nav>

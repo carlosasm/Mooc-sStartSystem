@@ -2,7 +2,6 @@
 
 
 class ProductController {
-
     public function __construct() {
         $this->view = new View();
     }
@@ -16,6 +15,12 @@ class ProductController {
         $items = new ItemModel();
         $data['listado']=$items->listar();
         $this->view->show("ver_tabla_arts.php", $data);
+    }
+
+    public function showRegisterProduct(){
+        require 'model/ItemModel.php';
+        $items = new ItemModel();
+        $this->view->show("registerProductView.php",null);
     }
 
   
