@@ -1,13 +1,9 @@
                
             </section>
-            <aside>
-                <a href="https://mediacionvirtual.ucr.ac.cr/login/index.php" target="_blank">
-                    <img src="public/img/mediacionvirtual.png" alt="Mediacion virtual"/>
-                </a>
-            </aside>
+           
         </section>
+        <script type="text/javascript" src="./public/js/log.js"></script>
         <footer>
-            Ejemplo HTML5, CSS3 y JavaScript
         </footer>
         
     </body>

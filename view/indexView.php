@@ -1,22 +1,41 @@
 <?php
-    include_once 'public/header.php';
-    
+    include_once 'public/headerMadera.php';
 ?>
 
- <article id="descripcion">
-                    <p>
-                        Esta es la descripcion Esta es la descripcion
-                        Esta es la descripcion Esta es la descripcion
-                        Esta es la descripcion Esta es la descripcion
-                        Esta es la descripcion Esta es la descripcion
-                        Esta es la descripcion Esta es la descripcion
-                        Esta es la descripcion Esta es la descripcion
-                    </p>
-                    <form>
-                        <input type="text" id="nombre" name="nombre" required/>
-                        <input type="submit" id="enviar" name="enviar"/>
-                    </form>
-                </article> 
+        <img class="wave" src="./public/img/wave.png">
+        <div class="container">
+            <div class="img">
+                <img src="./public/img/bg.svg"> 
+            </div>
+            <div class="login-container">
+                <form  action="">
+                    <img class="avatar" src="./public/img/avatar1.svg">
+                    <h2>Binvenido!!</h2>
+                    <div class="input-div uno">
+                        <div class="i">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h5>Nombre de usuario</h5>
+                            <input class="input" type="text">
+                        </div>
+                    </div>
+                    <div class="input-div dos">
+                        <div class="i">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div>
+                            <h5>Contraseña</h5>
+                            <input class="input" type="password">
+                        </div>
+                    </div>
+                    <a href="#">Olvidó su contraseña</a>
+                    <input type="submit" class="btn" value="INICIO">
+                </form>
+            </div>
+        </div>
+
+    
 
 <?php
     include_once 'public/footer.php';

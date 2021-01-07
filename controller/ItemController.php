@@ -8,7 +8,6 @@ class ItemController {
     }
 
     public function call_listar(){
-
         $this->view->show("listar.php",null);
     }
     //Método para listar y devolver una lista tabla
@@ -17,6 +16,10 @@ class ItemController {
         $items = new ItemModel();
         $data['listado']=$items->listar();
         $this->view->show("ver_tabla_arts.php", $data);
+    }
+
+    public function inicio_sesion(){
+        $this->view->show("indexView.php",null);
     }
 
 }
