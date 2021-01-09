@@ -43,7 +43,7 @@ include_once 'public/headerAdmin.php';
 				<input class="input" type="text" name="price_sell" id="price_sell" placeholder="Precio venta">
 				<input class="input" type="text" name="ganancias" id="ganancias" placeholder="Ganancias">
 				<div>
-					<input class="btn btn-insert" type="submit" value="Guardar">
+					<input class="btn btn-insert" 	type="submit" value="Guardar">
 					<input class="btn btn-cancel" type="submit" value="Cancelar" data-dismiss="modal">
 				</div>
 				

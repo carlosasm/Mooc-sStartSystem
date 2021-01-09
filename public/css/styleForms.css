@@ -78,7 +78,7 @@
   text-decoration: underline;
 }
 
-.form-register .btn {
+.form-register .btn-insert {
   display: inline;
   float: left;
   margin-left: 4px;
@@ -89,7 +89,7 @@
   font-size: 1.2rem;
   outline: none;
   border: none;
-  background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+  background-image: linear-gradient(to right, #32be8f, #5af3c0, #32be8f);
   cursor: pointer;
   color: #fff;
   text-transform: uppercase;
