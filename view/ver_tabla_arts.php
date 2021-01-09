@@ -23,8 +23,8 @@
         <td><?php echo $item['desc']; ?></td>
 
          <td>
-            <span class="btn btn-sm"  >
-					<span class="fa fa-pencil-square-o"></span>
+            <span class=" btn-sm"  >
+					<button class="btn fa fa-pencil-square-o" data-toggle="modal" data-target="#myModal"></button>
 				</span>
             </td>
     </tr>
@@ -35,6 +35,11 @@
     </tbody>
 </table>
 </div>
+
+
+
+
+
 <script type="text/javascript">
 $(document).ready(function() {
     $('#example').DataTable();

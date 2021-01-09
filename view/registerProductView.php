@@ -7,9 +7,6 @@
     <input class="input" type="text" name="price" id="price" placeholder="Precio costo">
     <input class="input" type="text" name="price_sell" id="price_sell" placeholder="Precio venta">
     <input class="input" type="text" name="ganancias" id="ganancias" placeholder="Ganancias">
-
     <input class="btn" type="submit" value="Registrar">
 </section>
-    
-
 <?php include_once 'public/footer.php';?>

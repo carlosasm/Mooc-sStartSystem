@@ -9,7 +9,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/a81368914c.js"></script>
         <script type="text/javascript" src="public/js/jquery-3.3.1.js"></script>
+        <script src="public/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="public/css/bootstrap.min.css">
         <script type="text/javascript" src="public/js/loginAjax.js"></script>
+        <script type="text/javascript" src="public/js/jquery-3.3.1.js"></script>
+        
          <link rel="stylesheet" type="text/css" href="public\css\styleLogin.css"/>
          <link rel="stylesheet" type="text/css" href="public\css\styleBase.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">

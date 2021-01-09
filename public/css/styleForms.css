@@ -3,19 +3,45 @@
   padding: 0;
   box-sizing: border-box;
 }
+.modal-header {
+  color: #fff;
+  background-color: #383b3d;
+}
 
+.modal h4 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.modal-body {
+  background-color: #383b3d;
+}
+
+.modal-footer {
+  background-color: #383b3d;
+}
+
+.modal-content {
+  background-color: #383b3d !important;
+  border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+  color: #b5b5b5;
+}
 .form-register {
-  width: 700px;
+  width: 450px;
   background-color: #383b3d;
   padding: 30px;
   margin: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   border-radius: 4px;
   font-family: "calibri";
 
   color: white;
-  box-shadow: 7px 13px 37px #000;
+  /*box-shadow: 7px 13px 37px #000;*/
 }
 
 .form-register h4 {
@@ -53,10 +79,12 @@
 }
 
 .form-register .btn {
-  display: block;
-  width: 100%;
+  display: inline;
+  float: left;
+  margin-left: 4px;
+  width: 48%;
   height: 50px;
-  border-radius: 25px;
+  border-radius: 5px;
   margin: 1rem 0;
   font-size: 1.2rem;
   outline: none;
@@ -66,10 +94,37 @@
   color: #fff;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  background-size: 200%;
+  background-size: 100%;
   transition: 0.5s;
+  margin-right: 5px;
+}
+
+.form-register .btn-cancel {
+  display: inline;
+  float: left;
+  width: 48%;
+  height: 50px;
+  border-radius: 5px;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #f21818, #f52e2e, #f21818);
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  background-size: 100%;
+  transition: 0.5s;
+  margin-left: 5px;
 }
 
 .form-register .btn:hover {
   background-position: right;
+  background-color: red !important;
+}
+
+.form-register .btn-cancel:hover {
+  background-position: left;
+  background-color: #32be8f;
 }
