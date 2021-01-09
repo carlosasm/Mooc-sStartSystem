@@ -1,4 +1,6 @@
-<?php include_once 'public/headerAdmin.php';?>
+<?php 
+require_once 'public/scripts.php';
+include_once 'public/headerAdmin.php';?>
 <section class="form-register">
     <h4>Registrar Producto</h4>
     <input class="input" type="text" name="code" id="code" placeholder="Codigo producto">

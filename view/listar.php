@@ -1,5 +1,5 @@
 <?php
-
+require_once 'public/scripts.php'; 
 include_once 'public/headerAdmin.php';
 
 ?>
@@ -13,7 +13,38 @@ include_once 'public/headerAdmin.php';
 					</div>
 					<div class="card-body">
 						<hr>
-						<div id="tablaDatatable"></div>
+						<div>
+							<table class="table table-hover" id="example">
+								<thead style="background-color: #dc3545;color: white; font-weight: bold;">
+									<tr>
+										<th>ID</th>
+										<th>Item</th>
+										<th>Descripcion</th>
+										<th>Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+								<?php
+									foreach ($vars['listado'] as $item){
+								?>
+								<tr>
+									<td><?php echo $item['_id']; ?></td>
+									<td><?php echo $item['name']; ?></td>
+									<td><?php echo $item['desc']; ?></td>
+
+									<td>
+										<span class=" btn-sm"  >
+											<button class="btn fa fa-pencil-square-o" onclick="$('#action').text('Editar Producto')" data-toggle="modal" data-target="#myModal"></button>
+										</span>
+									</td>
+								</tr>
+								<?php
+									}
+								?>
+
+								</tbody>
+							</table>
+						</div>
 					</div>
 					<div class="card-footer text-muted">
 						By Mooc´s Systems
@@ -30,7 +61,7 @@ include_once 'public/headerAdmin.php';
 
       <!-- Modal Header -->
 		<div class="modal-header">
-			<h4 class="modal-title">Modificar Producto</h4>
+			<h4 id="action" class="modal-title">Producto</h4>
 		</div>
 
 	  <!-- Modal body -->
@@ -60,8 +91,10 @@ include_once 'public/headerAdmin.php';
 </div>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		$('#tablaDatatable').load('?controlador=Item&accion=listar');
+		$('#example').DataTable();
 	});
+
+
 </script>
 	
 <?php
