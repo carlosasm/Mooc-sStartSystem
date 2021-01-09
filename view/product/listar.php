@@ -1,7 +1,6 @@
 <?php
 require_once 'public/scripts.php'; 
 include_once 'public/headerAdmin.php';
-
 ?>
 
 	<div class="container">

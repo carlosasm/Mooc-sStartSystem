@@ -10,7 +10,7 @@ class ProductController {
         require 'model/ItemModel.php';
         $items = new ItemModel();
         $data['listado']=$items->listar();
-        $this->view->show("listar.php",$data);
+        $this->view->show("product/listar.php",$data);
     }
     //Método para listar y devolver una lista tabla
     public function listar() {
@@ -19,7 +19,7 @@ class ProductController {
     public function showRegisterProduct(){
         require 'model/ItemModel.php';
         $items = new ItemModel();
-        $this->view->show("registerProductView.php",null);
+        $this->view->show("product/registerProductView.php",null);
     }
 
   
