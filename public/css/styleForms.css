@@ -1,3 +1,7 @@
+/**********************************************************************************
+Este documuento CSS se utilizará para hacer cambios específicos de los formularios y botones.
+ ***********************************************************************************/
+
 * {
   margin: 0;
   padding: 0;
@@ -39,9 +43,7 @@
   margin-bottom: 0px;
   border-radius: 4px;
   font-family: "calibri";
-
   color: white;
-  /*box-shadow: 7px 13px 37px #000;*/
 }
 
 .form-register h4 {
@@ -127,4 +129,23 @@
 .form-register .btn-cancel:hover {
   background-position: left;
   background-color: #32be8f;
+}
+.table #deleteBtn {
+  background-color: #f52e2e !important;
+  border-color: #f52e2e;
+}
+
+.table #deleteBtn:hover {
+  background-color: #b30606 !important;
+  border-color: #f52e2e;
+}
+
+#add {
+  margin-left: 15px;
+  margin-bottom: 0 !important;
+  color: #fff;
+}
+#confirm {
+  width: 100%;
+  height: 100%;
 }

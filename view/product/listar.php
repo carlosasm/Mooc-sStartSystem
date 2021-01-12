@@ -1,8 +1,8 @@
 <?php
-require_once 'public/scripts.php'; 
-include_once 'public/headerAdmin.php';
+	require_once 'public/scripts.php';
+	include_once 'public/headerAdmin.php';
 ?>
-
+	<!--!!!!!!!!!!!!!!!!!!! Tabla con el contenido recuperado del fetch al API!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -10,6 +10,11 @@ include_once 'public/headerAdmin.php';
 					<div class="card-header">
 						Productos
 					</div>
+					<span>
+						<button id="add" type="submit" class="btn fa fa-plus" onclick="$('#action').text('Agregar Producto')" data-toggle="modal" data-target="#myModal">
+							Agregar producto
+						</button>
+					</span>
 					<div class="card-body">
 						<hr>
 						<div>
@@ -33,7 +38,10 @@ include_once 'public/headerAdmin.php';
 
 									<td>
 										<span class=" btn-sm"  >
-											<button class="btn fa fa-pencil-square-o" onclick="$('#action').text('Editar Producto')" data-toggle="modal" data-target="#myModal"></button>
+											<button id="updateBtn"class="btn fa fa-pencil-square-o" onclick="$('#action').text('Editar Producto')" data-toggle="modal" data-target="#myModal"></button>
+										</span>
+										<span class=" btn-sm "  >
+											<button id="deleteBtn" class="btn btn-danger fa fa-trash" onclick="$('#action').text('Eliminar Producto')" data-toggle="modal" data-target="#modalDelete"></button>
 										</span>
 									</td>
 								</tr>
@@ -53,6 +61,8 @@ include_once 'public/headerAdmin.php';
 			</div>
 		</div>
 	</div>
+
+	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Sección de Modals!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 <div class="modal" id="myModal">
   <div class="modal-dialog">
@@ -86,7 +96,40 @@ include_once 'public/headerAdmin.php';
   </div>
 </div>
 
+<div class="modal" id="modalDelete">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-2">
 
+      <!-- Modal Header -->
+		<div class="modal-header">
+			<h4 id="action" class="modal-title">Eliminar Producto</h4>
+		</div>
+
+	  <!-- Modal body -->
+		<div class="modal-body">
+					
+
+			<section class="form-register">
+				<span>
+					<h4>
+						¿Está seguro que desea eliminar el producto?
+					</h4>
+					<span>
+						<button id="confirm" type="button" class="btn btn-danger  fa fa-check-circle">
+						</button>
+					</span>
+				</span>
+				</div>
+				
+			</section>
+		</div>
+    </div>
+  </div>
+</div>
+
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Seccion de Scripts para funcionalidades!!!!!!!!!!!!!!!!!!!!!!!!-->
+<script src="librerias/datatable/jquery.dataTables.min.js"></script>
+<script src="librerias/datatable/dataTables.bootstrap4.min.js"></script>
 </div>
 	<script type="text/javascript">
 	$(document).ready(function(){

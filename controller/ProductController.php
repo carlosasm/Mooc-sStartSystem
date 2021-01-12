@@ -5,7 +5,6 @@ class ProductController {
     public function __construct() {
         $this->view = new View();
     }
-
     public function call_listar(){
         require 'model/ItemModel.php';
         $items = new ItemModel();
