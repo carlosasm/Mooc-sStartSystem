@@ -32,7 +32,7 @@
 									foreach ($vars['listado'] as $item){
 								?>
 								<tr>
-									<td><?php echo $item['_id']; ?></td>
+									<td><?php echo $item['id']; ?></td>
 									<td><?php echo $item['name']; ?></td>
 									<td><?php echo $item['desc']; ?></td>
 
@@ -76,6 +76,8 @@
 	  <!-- Modal body -->
 		<div class="modal-body">
 			<section class="form-register">
+				<input class="input" type="text" name="id" id="id" placeholder="ID">
+				<input class="input" type="text" name="name" id="name" placeholder="ID">
 				<input class="input" type="text" name="code" id="code" placeholder="Codigo producto">
 				<input class="input" type="text" name="quantity" id="quantity" placeholder="Cantidad producto">
 				<input class="input" type="text" name="desc" id="desc" placeholder="Descripcion">
@@ -83,7 +85,7 @@
 				<input class="input" type="text" name="price_sell" id="price_sell" placeholder="Precio venta">
 				<input class="input" type="text" name="ganancias" id="ganancias" placeholder="Ganancias">
 				<div>
-					<input class="btn btn-insert" 	type="submit" value="Guardar">
+					<input class="btn btn-insert" onclick="insertProduct()"	type="submit" value="Guardar">
 					<input class="btn btn-cancel" type="submit" value="Cancelar" data-dismiss="modal">
 				</div>
 				

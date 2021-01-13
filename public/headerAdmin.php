@@ -17,6 +17,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         
+        <script type="text/javascript" src="public/js/loginAjax.js"></script>
         <!--<script src="public/js/bootstrap.js"></script>
         <link rel="stylesheet" href="public/css/bootstrap.css">
 -->

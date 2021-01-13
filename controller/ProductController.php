@@ -21,5 +21,11 @@ class ProductController {
         $this->view->show("product/registerProductView.php",null);
     }
 
+    public function insert(){
+        require 'model/ItemModel.php';
+        $items = new ItemModel();
+        $items->insertData();
+        
+    }
   
 }
