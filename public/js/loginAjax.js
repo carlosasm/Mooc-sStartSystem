@@ -3,7 +3,6 @@ function login(val1, val2) {
         "username": val1,
         "pass": val2
     };
-
     $.ajax({
         data: parametros,
         url: "?controller=Product&action=call_listar",
@@ -11,18 +10,33 @@ function login(val1, val2) {
         beforeSend: function () {
         },
         success: function (response) {
-
             location.href = "?controlador=Product&accion=call_listar";
         }
-
     });
 }
 
 
-function loadProduct() { 
+
+
+async function postData(url = '', data = {}) {
+  const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE.
+    mode: 'cors', // no-cors, *cors, same-origin
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    redirect: 'follow', // manual, *follow, error
+    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data) // body data type must match "Content-Type" header
+  });
 }
 
+
+
 function insertProduct() {
+    postData( 'https://us-central1-mooc-sstartsystems.cloudfunctions.net/app/api/products',{ name: $("#name").val() ,description:$("#desc").val(),id:$("#id").val() })
+    .then(data => {
+    })
     console.log($("#code").val())
     codigo = $("#code").val()
     cost_price = $("#price").val()
@@ -52,8 +66,6 @@ function insertProduct() {
         beforeSend: function () {
         },
         success: function (response) {
-
-            //location.href = "?controlador=Product&accion=call_listar";
         }
 
     });
