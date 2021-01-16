@@ -34,7 +34,7 @@
 								<tr>
 									<td id="idTable"><?php echo $item['id']; ?></td>
 									<td><?php echo $item['name']; ?></td>
-									<td><?php echo $item['description	']; ?></td>
+									<td><?php echo $item['description']; ?></td>
 
 									<td>
 										<span class=" btn-sm"  >
