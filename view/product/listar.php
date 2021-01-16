@@ -32,23 +32,22 @@
 									foreach ($vars['listado'] as $item){
 								?>
 								<tr>
-									<td><?php echo $item['id']; ?></td>
+									<td id="idTable"><?php echo $item['id']; ?></td>
 									<td><?php echo $item['name']; ?></td>
-									<td><?php echo $item['desc']; ?></td>
+									<td><?php echo $item['description	']; ?></td>
 
 									<td>
 										<span class=" btn-sm"  >
 											<button id="updateBtn"class="btn fa fa-pencil-square-o" onclick="$('#action').text('Editar Producto')" data-toggle="modal" data-target="#myModal"></button>
 										</span>
 										<span class=" btn-sm "  >
-											<button id="deleteBtn" class="btn btn-danger fa fa-trash" onclick="$('#action').text('Eliminar Producto')" data-toggle="modal" data-target="#modalDelete"></button>
+											<button id="deleteBtn" class="btn btn-danger fa fa-trash" onclick="$('#idDel').val('<?php echo $item['id']; ?>')" data-toggle="modal" data-target="#modalDelete"></button>
 										</span>
 									</td>
 								</tr>
 								<?php
 									}
 								?>
-
 								</tbody>
 							</table>
 						</div>
@@ -87,6 +86,8 @@
 				<div>
 					<input class="btn btn-insert" onclick="insertProduct()"	type="submit" value="Guardar">
 					<input class="btn btn-cancel" type="submit" value="Cancelar" data-dismiss="modal">
+					<input class="btn btn-insert" onclick="updateProduct()" type="submit" value="UPD" data-dismiss="modal">
+
 				</div>
 				
 			</section>
@@ -113,11 +114,12 @@
 
 			<section class="form-register">
 				<span>
+				<input class="input" type="text" name="id" id="idDel" placeholder="ID">
 					<h4>
 						¿Está seguro que desea eliminar el producto?
 					</h4>
 					<span>
-						<button id="confirm" type="button" class="btn btn-danger  fa fa-check-circle">
+						<button id="confirm" type="button" onclick="deleteProduct($('#idDel').val())" class="btn btn-danger  fa fa-check-circle">
 						</button>
 					</span>
 				</span>

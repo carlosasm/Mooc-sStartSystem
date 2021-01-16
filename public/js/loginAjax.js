@@ -18,7 +18,7 @@ function login(val1, val2) {
 
 
 
-async function postData(url = '', data = {}) {
+async function postData1(url = '', data = {}) {
   const response = await fetch(url, {
     method: 'POST', // *GET, POST, PUT, DELETE.
     mode: 'cors', // no-cors, *cors, same-origin
@@ -33,11 +33,17 @@ async function postData(url = '', data = {}) {
 
 
 
-function insertProduct() {
-    postData( 'https://us-central1-mooc-sstartsystems.cloudfunctions.net/app/api/products',{ name: $("#name").val() ,description:$("#desc").val(),id:$("#id").val() })
-    .then(data => {
-    })
-    console.log($("#code").val())
+async function insertProduct1() {
+    postData('https://us-central1-mooc-sstartsystems.cloudfunctions.net/app/api/products', {
+        name: $("#name").val(),
+        description: $("#desc").val(),
+        id: $("#id").val(),
+
+    }).then(data => { console.log(data) })
+
+
+
+   // console.log($("#code").val())
     codigo = $("#code").val()
     cost_price = $("#price").val()
     description= $("#desc").val()
